@@ -1,0 +1,43 @@
+<%- include('header.ejs') %>
+
+<div id="maincontent">
+  <article id="content">
+    <div class="game-entry">
+      <h3><%= title %></h3>
+      <a class="btn btn-primary add" href="/mygames/add"> Dodaj</a>
+      <a class="btn btn-primary add" href="/mygames/sort-score"> Sortuj po ocenie</a>
+      <a class="btn btn-primary add" href="/mygames/sort-year"> Sortuj po roku</a>
+      <table class="movies-table">
+        <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Tytuł</th>
+                    <th>Producent</th>
+                    <th>Rok Wydania</th>
+                    <th>Gatunek</th>
+                    <th>Ocena</th>
+                    <th>Akcje</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <% for (var i = 0; i < data.length; i++) { %>
+                    <tr>
+                      <td><%= data[i].id %></td>
+                      <td><%= data[i].tytul %></td>
+                      <td><%= data[i].producent %></td>
+                      <td><%= data[i].rok_wydania %></td>
+                      <td><%= data[i].gatunek %></td>
+                      <td><%= data[i].ocena %></td>
+                      <td>
+                        <a class="btn btn-success edit" href="/mygames/edit/<%= data[i].id %>"> Edytuj</a>
+                        <a class="btn btn-danger delete" href="/mygames/delete/<%= data[i].id %>" onclick="return confirm('Czy jesteś pewien?')">Usuń</a>
+                      </td>
+                    </tr>
+                  <% } %>
+                  </tbody>
+      </table>
+    </div>
+  </article>
+</div>
+
+<%- include('footer.ejs') %>

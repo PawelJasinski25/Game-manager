@@ -1,0 +1,36 @@
+<%- include('header.ejs') %>
+
+<div id="maincontent">
+    <article id="content">
+        <div class="game-entry">
+            <h3><%= title %></h3>
+            <form action="/mygames/add" method="post">
+                <div class="form-group">
+                    <label>Tytuł:</label>
+                    <input type="text" class="form-control" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label>Producent:</label>
+                    <input type="text" class="form-control" name="producer" required>
+                </div>
+                <div class="form-group">
+                    <label>Rok wydania:</label>
+                    <input type="text" class="form-control" name="year"  pattern="\d+" title="Wprowadź liczbę całkowitą" required>
+                </div>
+                <div class="form-group">
+                    <label>Gatunek:</label>
+                    <input type="text" class="form-control" name="genre" required>
+                </div>
+                <div class="form-group">
+                    <label>Ocena:</label>
+                    <input type="number" class="form-control" name="score" step="any" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary" value="Dodaj"/>
+                </div>
+            </form>
+        </div>
+    </article>
+</div>
+
+<%- include('footer.ejs') %>

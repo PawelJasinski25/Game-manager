@@ -1,0 +1,24 @@
+
+<%- include('header.ejs') %>
+
+<div id="maincontent">
+    <article id="content">
+        <div class="game-entry">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" class="form-control" id="name" name="name"><br>
+
+                <label for="email">Adres e-mail:</label>
+                <input type="email" class="form-control" id="email" name="email"><br>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" class="form-control" name="message" rows="4"></textarea><br>
+
+                <input type="submit" class="btn btn-info"  value="Wyślij">
+            </form>
+        </div>
+    </article>
+</div>
+
+<%- include('footer.ejs') %>

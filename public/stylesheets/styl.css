@@ -1,0 +1,267 @@
+body {
+    background-color: #dadada;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#main {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+#header {
+    background: #a4c3f3;
+    padding: 0;
+    height: 80px;
+    width: 1000px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    position: relative;
+    border-radius: 5px
+}
+
+.left-image,
+.right-image {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 80px;
+}
+
+.left-image {
+    left: 20px;
+}
+
+.right-image {
+    right: 20px;
+}
+
+#header h1 {
+    font-size: 70px;
+    font-family: Impact, sans-serif;
+    color: blue;
+    -webkit-text-stroke: 1.7px #ffffff;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+
+#menu {
+    list-style: none;
+    margin-bottom: 7px;
+    padding: 5px;
+    background: #a4c3f3;
+    border-radius: 5px
+
+
+}
+
+#menu ul {
+
+    text-align: center;
+    padding:0;
+
+}
+#menu li {
+
+
+    font-family: "Courier New", Courier, serif;
+    display: inline-block;
+    margin: 0;
+    margin-top:15px;
+    padding: 0;
+
+}
+#menu a {
+    border-radius: 6px;
+    background: #0033CC;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 12px 20px 12px 20px;
+    text-decoration: none;
+}
+#menu a:hover { background: #5aa7e7;
+    color: #2135e3;
+    font-weight: bold;
+}
+
+
+
+#maincontent {
+    margin-bottom: 7px;
+    padding: 0 0 0 0;
+    background: #a4c3f3;
+    border-radius: 5px
+}
+
+#maincontent #content {
+    padding: 10px;
+
+}
+
+#maincontent #content p {
+    text-align: justify;
+
+
+}
+
+.game-entry {
+    padding: 20px;
+    margin-bottom: 23px;
+    border-radius: 20px;
+    box-shadow: #1751d1 0 0 5px 0, #2e47c1 0 4px 20px 0;
+}
+.game-entry h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.image-container{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img{
+    margin: 0;
+    width: 45%;
+}
+
+
+.read-more a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more a:hover {
+    text-decoration: underline;
+}
+
+#foot { background: #84a5d7;
+    padding: 0 0 0 0;
+    border: 1px solid #421cff;
+    height: 30px;
+}
+#foot p { padding: 0 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-top:3px;
+}
+
+figure{
+    margin:auto;
+}
+
+figure img{
+    width:100%;
+    height:auto;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+figcaption {
+    font-style:italic;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.movies-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.movies-table th, .movies-table td {
+    box-shadow: #393d47 0 0 5px 0, #6c7dc9 0 4px 20px 0;
+    padding: 8px;
+    text-align: center;
+}
+
+.movies-table th {
+    background-color: #90acdd;
+}
+
+.movies-table td {
+    background-color: #a4c3f3;
+}
+
+
+#content h3,
+#content .add {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-left:10px;
+}
+
+.add {
+    float: right;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #main {
+        width: auto;
+    }
+
+    #header {
+        width:auto;
+    }
+
+    #header h1 {
+        font-size: 50px;
+    }
+
+    #menu li {
+
+        display: block;
+    }
+    #menu a{
+        display: block;
+        padding: 3px;
+        margin-bottom: 6px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .left-image,
+    .right-image {
+        height: 0px;
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #header h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    #header h1 {
+        font-size: 30px;
+    }
+}
+
+
+
