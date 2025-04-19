@@ -11,8 +11,11 @@ Aplikacja webowa stworzona w Node.js i Express, pozwalająca zarządzać bazą g
 
 ## 🛠 Instrukcja uruchomienia
 1. Pobierz repozytorium.
-2. Utwórz bazę danych. Można skorzystać z plików `schema.sql` i `seed.sql`.
-3. Utwórz plik `.env` z następującą zawartością:
+   ```bash
+   git clone https://github.com/PawelJasinski25/Game-manager.git
+   ```
+3. Utwórz bazę danych. Można skorzystać z plików `schema.sql` i `seed.sql`.
+4. Utwórz plik `.env` z następującą zawartością:
 
    ```env
    DB_HOST=localhost
@@ -21,7 +24,7 @@ Aplikacja webowa stworzona w Node.js i Express, pozwalająca zarządzać bazą g
    DB_NAME=games
    PORT=3000
  
-4. Zainstaluj zależności
+5. Zainstaluj zależności
    ```
    npm install
 6. Uruchom aplikację
